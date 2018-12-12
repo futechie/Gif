@@ -1,0 +1,31 @@
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">UserName</label>
+        <input type="text" name="username" id="username"  placeholder="Username" [(ngModel)]="this.model.username" required/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email"  placeholder="E-mail" [(ngModel)]="this.model.email" required/>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"  placeholder="Password"  [(ngModel)]="this.model.password" required />
+      </div>
+      <div class="form-group">
+        <label for="re-password">re-password</label>
+        <input type="password" name="re-password" id="re-password"   placeholder="Retype password"  [(ngModel)]="this.model.repassword" required />
+      </div>
+
+      <input class="btn btn-success" type="submit" name="signup_submit" (click) = "saveUsers()" value="Sign me up" />
+      <div><a href="#" (click)="loadlogin()">Join us</a></div>
+    </form>
+    
+  </div>
+
+</div>
+
+<!-- [(ngModel)]="register.re-password"  [(ngModel)]="register.password" [(ngModel)]="register.username" [(ngModel)]="register.email" -->
+
