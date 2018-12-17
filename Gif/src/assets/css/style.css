@@ -10,3 +10,11 @@ div.dev-tools-bg {
     padding: 60px 0 0 0;
     height: 230px;
 }
+.navcustom
+{
+      color: #fff;
+    background-color: #4e7de6;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
